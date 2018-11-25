@@ -1,10 +1,12 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - Slovenian
 *
 * Author: Žiga Drnovšček
 * 		  ziga.drnovscek@gmail.com
-*         
+*
 *
 *
 * Location: http://github.com/benedmunds/ion_auth/
@@ -155,4 +157,3 @@ $lang['email_forgot_password_link']       = 'Ponastavite geslo';
 // Novo geslo sporočilo
 $lang['email_new_password_heading']    = 'Novo geslo za %s';
 $lang['email_new_password_subheading'] = 'Vaše geslo je bilo ponastavljeno v: %s';
-

@@ -34,7 +34,6 @@ class Qz5z_oauth
 
     private function GoCurl($url, $type, $data = false, &$err_msg = null, $timeout = 8, $cert_info = array())
     {
-        
         $type = strtoupper($type);
         $data = http_build_query($data);
         /* if ($type == 'GET' && is_array($data)) {

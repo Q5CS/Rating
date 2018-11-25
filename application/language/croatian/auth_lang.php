@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - English
 *
@@ -160,4 +162,3 @@ $lang['email_forgot_password_link']       = 'Poništi lozinku';
 // New Password Email
 $lang['email_new_password_heading']    = 'Nova lozinka za %s';
 $lang['email_new_password_subheading'] = 'Vaša lozinka je poništena: %s';
-

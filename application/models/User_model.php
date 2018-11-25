@@ -1,12 +1,13 @@
 <?php
-class User_model extends CI_Model {
-
+class User_model extends CI_Model
+{
     public function __construct()
     {
         $this->load->library('session');
     }
     
-    public function getUserToken($code) {
+    public function getUserToken($code)
+    {
         $this->load->library('qz5z_oauth');
         $client_id = "rating";
         $client_secret = "******";
@@ -14,7 +15,7 @@ class User_model extends CI_Model {
         $grant_type = "authorization_code";
         $scope = "";
         $t = $this->qz5z_oauth->getUserToken($code, $client_id, $client_secret, $redirect_uri, $grant_type, $scope);
-        if(isset($t->error)) {
+        if (isset($t->error)) {
             return [-1,$t];
         }
         return [1,$t];
@@ -25,7 +26,8 @@ class User_model extends CI_Model {
      * @param object $obj 对象
      * @return array
      */
-    private function object_to_array($obj) {
+    private function object_to_array($obj)
+    {
         $obj = (array)$obj;
         foreach ($obj as $k => $v) {
             if (gettype($v) == 'resource') {
@@ -37,21 +39,22 @@ class User_model extends CI_Model {
         }
         return $obj;
     }
-    public function getUserData($token) {
+    public function getUserData($token)
+    {
         $this->load->library('qz5z_oauth');
         $t = $this->qz5z_oauth->getUserData($token, "");
         $t = $this->object_to_array($t);
-        $this->session->logged = TRUE;
+        $this->session->logged = true;
         $this->session->user = $t;
-        $t['admin'] = FALSE;
+        $t['admin'] = false;
         return array(
                 'status' => 1,
                 'name' => $t['name'],
                 'msg' => '登录成功'
             );
-        
     }
-    public function logout() {
+    public function logout()
+    {
         $this->session->sess_destroy();
         $returndata = array(
             'status' => 1,
@@ -59,10 +62,12 @@ class User_model extends CI_Model {
         );
         return $returndata;
     }
-    public function userinfo() {
+    public function userinfo()
+    {
         return $this->session->user;
     }
-    public function logged() {
+    public function logged()
+    {
         return $this->session->logged;
     }
 }

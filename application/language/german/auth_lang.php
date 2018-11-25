@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - German
 *
@@ -7,7 +9,7 @@
 *         @benedmunds
 *
 * Translation: Benjamin Neu (benny@duxu.de), Max Vogl mail@max-vogl.de
-*         
+*
 *
 * Location: http://github.com/benedmunds/ion_auth/
 *

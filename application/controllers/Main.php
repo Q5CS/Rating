@@ -95,7 +95,8 @@ class Main extends CI_Controller
         echo json_encode($this->Main_model->post($sid, $rate1, $rate2, $rate3, $comment));
     }
 
-    public function test() {
+    public function test()
+    {
         echo $this->Main_model->clacRank(1);
     }
 }

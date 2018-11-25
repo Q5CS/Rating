@@ -24,10 +24,11 @@ class User extends CI_Controller
         parent::__construct();
         $this->load->model('User_model');
     }
-    public function auth() {
+    public function auth()
+    {
         $code = $this->input->post("code");
         $t = $this->User_model->getUserToken($code);
-        if($t[0] < 0) {
+        if ($t[0] < 0) {
             echo json_encode(['status' => -1, 'msg' => $t[1]]);
             return;
         }
@@ -45,5 +46,4 @@ class User extends CI_Controller
     {
         echo json_encode($this->User_model->userinfo());
     }
-
 }

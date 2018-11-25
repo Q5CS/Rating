@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - English
 *
@@ -161,4 +163,3 @@ $lang['email_forgot_password_link']       = 'Reset uw wachtwoord';
 // New Password Email
 $lang['email_new_password_heading']    = 'Nieuw wachtwoord voor %s';
 $lang['email_new_password_subheading'] = 'Je wachtwoord werd gereset naar: %s';
-

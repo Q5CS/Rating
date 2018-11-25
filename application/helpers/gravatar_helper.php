@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2015
@@ -8,8 +8,8 @@
 if (!function_exists('gravatar')) {
 
     // This helper function has been added here for compatibility with PyroCMS.
-    function gravatar($email = '', $size = 50, $rating = 'g', $url_only = false, $default = false) {
-
+    function gravatar($email = '', $size = 50, $rating = 'g', $url_only = false, $default = false)
+    {
         $ci = & get_instance();
         $ci->load->library('gravatar');
 
@@ -25,5 +25,4 @@ if (!function_exists('gravatar')) {
 
         return '<img src="'.$gravatar_url.'" alt="Gravatar" class="gravatar" />';
     }
-
 }

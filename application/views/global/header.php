@@ -59,13 +59,13 @@
 
 <?php
 if ($logged) {
-    echo '
+        echo '
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: \'#doc-topbar-collapse-2\'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
     <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse-2">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li><a href="/">首页</a></li>';
 
-    echo'
+        echo'
     </ul>
 
     <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
@@ -75,8 +75,8 @@ if ($logged) {
     </div>
     <script>var login = true;</script>
         ';
-} else {
-    echo '<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: \'#doc-topbar-collapse-2\'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    } else {
+        echo '<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: \'#doc-topbar-collapse-2\'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
     <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse-2">
     <ul class="am-nav am-nav-pills am-topbar-nav">
     <li><a href="/main/login">登录</a></li>
@@ -84,7 +84,7 @@ if ($logged) {
     </div>
     <script>var login = false;</script>
     ';
-}
+    }
 ?>
 </header>
 

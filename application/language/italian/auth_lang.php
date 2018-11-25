@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - Italian
 *
@@ -161,4 +163,3 @@ $lang['email_forgot_password_link']       = 'Reimposta la tua Password';
 // New Password Email
 $lang['email_new_password_heading']    = 'Nuova Password per %s';
 $lang['email_new_password_subheading'] = 'La tua password &egrave; stata reimpostata a: %s';
-

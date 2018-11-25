@@ -1,16 +1,18 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Ion Auth Lang - Hungarian
-* 
+*
 * Author: Balazs Bosternak
 * 		    b.bosternak@gmail.com
-* 
+*
 * Location: http://github.com/benedmunds/ion_auth/
-*          
-* Created:  07.19.2015 
-* 
+*
+* Created:  07.19.2015
+*
 * Description:  Hungarian language file for Ion Auth messages and errors
-* 
+*
 */
 
 // Account Creation

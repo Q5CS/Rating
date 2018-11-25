@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /**
 * Name:  Auth Lang - Korean
 *
@@ -158,4 +160,3 @@ $lang['email_forgot_password_link']       = '비밀번호 변경';
 // New Password Email
 $lang['email_new_password_heading']    = '%s 비밀번호 초기화';
 $lang['email_new_password_subheading'] = '계정 비밀번호가 %s 로 변경되었습니다.';
-
